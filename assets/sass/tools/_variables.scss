@@ -1,0 +1,120 @@
+
+/*--- Širina sajta ---*/
+$wrapper : 80%;
+
+/*--- Responsive ---*/
+/*
+$mobile  : 481px;
+$tablet  : 769px;
+$desktop : 1000px;
+*/
+
+/*--- Fontovi ---*/
+$regular_font : 'Roboto', arial, sans-serif;
+$special_font_bold: 'crediscbold', arial, sans-serif;
+
+$title_font: $special_font_bold;
+$text_font: $regular_font;
+
+/*--- Veličina gonta ---*/
+$f_size_1     : 12px;
+$f_size_2     : 14px;
+$f_size_3     : 16px;
+$f_size_4     : 18px;
+$f_size_5     : 24px;
+$f_size_6     : 34px;
+$f_size_7     : 44px;
+
+/*--- Debljina fonta ---*/
+$w_size_1     : 100;
+$w_size_2     : 200;
+$w_size_3     : 300;
+$w_size_4     : 400;
+$w_size_5     : 500;
+$w_size_6     : 600;
+$w_size_7     : 700;
+$w_size_8     : 800;
+$w_size_9     : 900;
+
+/*--- Debljina fonta --*/
+
+$f_light: 300;
+$f_thin: 400;
+$f_regular: 500;
+$f_thick: 600;
+$f_bold: 700;
+$f_black: 800;
+$f_extra_black: 900;
+
+/*--- Razmak izmedju redova ---*/
+$l_size_1     : 16px;
+$l_size_2     : 24px;
+$l_size_3     : 26px;
+$l_size_4     : 30px;
+$l_size_5     : 34px;
+$l_size_6     : 40px;
+$l_size_7     : 54px;
+
+/*--- Paleta boja ---*/
+$white          : #fff;
+$dark           : #000;
+$gray           : #000;
+//$dark_gray      : #666667;
+$dark_gray      : #000;
+$blue           : #218ca0;
+$light_blue		  : #7ebfc5;
+$red            : #e74c3c;
+$green          : #55a32a;
+$light_green    : #d4f3eb;
+$yellow         : #fedf48;
+$link_color     : $blue;
+
+/*--- Paleta modula ---*/
+$tipsy_color          : #000;
+$qq_uploader_color    : #000;
+
+/*--- Model box-a ---*/
+$box_model : border-box;
+
+/*--- Border i Radijus ---*/
+$border_radius   : 4px;
+$border_size     : 1px;
+$border_style    : solid;
+$border_color    : $gray;
+
+/*--- Animacija ---*/
+$transition_time  : 0.3s;
+$scale_value      : 1.2;
+
+/*--- Senka ---*/
+$box_shaddow_x      : 0px;
+$box_shaddow_y      : 0px;
+$box_shaddow_blur   : 10px;
+$box_shaddow_inset  : 0px;
+$box_shaddow_color  : rgba(0,0,0,0.4);
+
+/*--- Senka na tekstu ---*/
+$text_shaddow_x      : 0px;
+$text_shaddow_y      : 0px;
+$text_shaddow_blur   : 10px;
+$text_shaddow_color  : $dark;
+
+
+$spacing: 2rem;
+$spacing-large: $spacing * 3;
+
+/*-- PX to EMS --*/
+
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+	@if (unitless($pixels)) {
+	    $pixels: $pixels * 1px;
+	}
+
+	@if (unitless($context)) {
+	    $context: $context * 1px;
+	}
+
+	@return $pixels / $context * 1em;
+}
